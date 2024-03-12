@@ -24,7 +24,7 @@ return {
         "javascript",
         "typescript",
       },
-      incremental_selection {
+      incremental_selection = {
         enable = true,
         keymaps = {
           init_selection = "<C-space>",
