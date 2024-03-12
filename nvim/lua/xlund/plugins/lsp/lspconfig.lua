@@ -28,7 +28,7 @@ return {
 			keymap.set("n", "gt", "<cmd>FzfLua lsp_typedefs<CR>", opts)
 
 			opts.desc = "Show workspace symbols"
-			keymap.set("n", "<leader>ws", "<cmd>FzfLua lsp_workspace_symbols<CR>", opts)
+			keymap.set("n", "<leader>ws", "<cmd>FzfLua lsp_live_workspace_symbols<CR>", opts)
 
 			opts.desc = "Show Document Symbols"
 			keymap.set("n", "<leader>ds", "<cmd>FzfLua lsp_document_symbols<CR>", opts)
