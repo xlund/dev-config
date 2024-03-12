@@ -8,6 +8,7 @@ source "$CONFIG_DIR/colors.sh" # Load custom colors
 # https://github.com/FelixKratz/dotfiles
 
 PLUGIN_DIR="$CONFIG_DIR/plugins"
+ITEMS_DIR="$CONFIG_DIR/items"
 
 ##### Bar Appearance #####
 # Configuring the general appearance of the bar.
@@ -16,7 +17,7 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 # If you are looking for other colors, see the color picker:
 # https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
 
-sketchybar --bar position=top height=32 blur_radius=30 color=$BAR_COLOR
+sketchybar --bar position=top height=37 blur_radius=30 color=$BAR_COLOR
 
 ##### Changing Defaults #####
 # We now change some default values, which are applied to all further items.
@@ -50,8 +51,8 @@ do
     space="$sid"
     icon="${SPACE_ICONS[i]}"
     icon.padding_left=7
-    icon.padding_right=7
-    background.color=0xe4bbbc
+    icon.padding_right=10
+    background.color=$ITEM_BG_COLOR
     background.corner_radius=2
     background.height=25
     label.drawing=off
@@ -90,6 +91,5 @@ sketchybar --add item clock right \
            --add item battery right \
            --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
            --subscribe battery system_woke power_source_change
-
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
