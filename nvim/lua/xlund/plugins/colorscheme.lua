@@ -4,5 +4,5 @@ return {
 	config = function()
 		vim.o.termguicolors = true
 		vim.cmd("colorscheme nightfox")
-	end
+	end,
 }
