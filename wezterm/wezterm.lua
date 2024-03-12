@@ -14,9 +14,10 @@ config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
   left = 4,
   right = 0,
-  top = 0,
+  top = 4,
   bottom = 0,
 }
 
+config.window_decorations = "RESIZE"
 
 return config
