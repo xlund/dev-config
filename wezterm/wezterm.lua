@@ -9,6 +9,14 @@ config.font = wezterm.font_with_fallback{
 }
 config.font_size = 14
 
+config.hide_tab_bar_if_only_one_tab = true
+
+config.window_padding = {
+  left = 4,
+  right = 0,
+  top = 0,
+  bottom = 0,
+}
 
 
 return config
