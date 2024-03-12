@@ -1,4 +1,5 @@
 {
+  "codeium.vim": { "branch": "main", "commit": "5b8f68d5c0e32ae97d073a56ff14dba5646ec223" },
   "conform.nvim": { "branch": "master", "commit": "db2c697fe8302f0328b50b480204be1b577a1e2f" },
   "fzf-lua": { "branch": "main", "commit": "eb045745a502415fb966ab888ac4e6b6f9d932f3" },
   "lazy.nvim": { "branch": "main", "commit": "83493db50a434a4c5c648faf41e2ead80f96e478" },
