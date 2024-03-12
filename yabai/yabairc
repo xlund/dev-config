@@ -1,0 +1,32 @@
+# Load yabai
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# Layout
+# Options: bsp, managed, float
+yabai -m config layout bsp
+
+# Spawn windows to the right if vertical split or bottom if horizontal
+# Opts: first_child, second_child
+yabai -m config window_placement second_child
+
+# Padding
+yabai -m config top_padding 8 
+yabai -m config bottom_padding 8
+yabai -m config left_padding 8
+yabai -m config right_padding 8
+yabai -m config window_gap 8
+
+# Hide shadows except for floating windows
+yabai -m config window_shadow float
+
+# Move mouse to center of focused window
+yabai -m config mouse_follows_focus on
+
+# If custom status bar, set this to the height of the status bar
+# opts: main, all
+# yabai -m config external_bar all:32:0
+
+# Disable apps
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
