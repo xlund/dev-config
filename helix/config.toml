@@ -1,0 +1,4 @@
+theme = "nord-night"
+[keys.normal]
+V = ["goto_first_nonwhitespace", "extend_to_line_end"]
+D = ["ensure_selections_forward", "extend_to_line_end"]
